@@ -27,7 +27,11 @@
     },
     {
       "path": "README.md",
-      "sha256": "c2d36c4a0892394617c167ab7c2161955dcd4adac44a34409fd27f490338c5b0"
+      "sha256": "8ab9a440cc3fb335fe3ae4ca3b30baa2478c61361019480bc4fb4ac9d165469c"
+    },
+    {
+      "path": "SUPPORT.md",
+      "sha256": "7800dd5139c7e9c9f1c9f66ad376053a45d6ef09fdb533b9e5290959c61084fa"
     },
     {
       "path": "agents/mad-autor.toml",
@@ -40,6 +44,10 @@
     {
       "path": "agents/mapa-tecnico.toml",
       "sha256": "6464143acea8390d5471399d554927ea930754c83914d7f0f6f3b843726a6f5b"
+    },
+    {
+      "path": "docs/github-integration.md",
+      "sha256": "c6de1d5114d23c9c280d527d08e5d761687bf116957cf0ddd8c60f587d9aac18"
     },
     {
       "path": "docs/installation.md",
