@@ -1,0 +1,4 @@
+interface:
+  display_name: "Desenvolvimento de soluções"
+  short_description: "Arquitetura, implementação e validação proporcional"
+  default_prompt: "Use $desenvolvimento-solucoes para implementar o pedido completo, fechar produtor e consumidores, testar os artefatos finais e respeitar a última decisão explícita e os limites de execução."
