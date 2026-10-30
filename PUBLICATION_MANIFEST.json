@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "769344eb56ddd3888da2aec3ad895c213083b6212016270ce3f59ae8fc4d192b"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "c26b80ece4384689fbbb3cf57ad275ba3e7c5db6273ac01e2779af8f9d7beb76"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "a47f66e9dc838967c2790053426a79cb0953f6bfeeb9bfa0ae8e3d46e5b8d66d"
+    },
+    {
+      "path": "README.md",
+      "sha256": "7fb8b0ef4299747383f1bbfead92b0f2a3db39fdce08a285bee0bb3ede83f220"
+    }
+  ]
+}
