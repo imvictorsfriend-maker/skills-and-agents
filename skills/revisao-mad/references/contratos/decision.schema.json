@@ -1,0 +1,146 @@
+{
+  "$defs": {
+    "Check": {
+      "additionalProperties": false,
+      "properties": {
+        "check_id": {
+          "title": "Check Id",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "NOT_RUN",
+            "NOT_APPLICABLE"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "evidence_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Evidence Ids",
+          "type": "array"
+        },
+        "observation": {
+          "title": "Observation",
+          "type": "string"
+        }
+      },
+      "required": [
+        "check_id",
+        "status",
+        "evidence_ids",
+        "observation"
+      ],
+      "title": "Check",
+      "type": "object"
+    },
+    "Resolution": {
+      "additionalProperties": false,
+      "properties": {
+        "finding_id": {
+          "title": "Finding Id",
+          "type": "string"
+        },
+        "disposition": {
+          "enum": [
+            "RESOLVED",
+            "REJECTED_WITH_EVIDENCE",
+            "OPEN"
+          ],
+          "title": "Disposition",
+          "type": "string"
+        },
+        "evidence_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Evidence Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "finding_id",
+        "disposition",
+        "evidence_ids"
+      ],
+      "title": "Resolution",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "task_id": {
+      "title": "Task Id",
+      "type": "string"
+    },
+    "source_pack_sha256": {
+      "title": "Source Pack Sha256",
+      "type": "string"
+    },
+    "review_status": {
+      "enum": [
+        "ACCEPTED",
+        "REVISION_REQUIRED",
+        "INSUFFICIENT_EVIDENCE",
+        "BUDGET_EXCEEDED",
+        "CANCELLED"
+      ],
+      "title": "Review Status",
+      "type": "string"
+    },
+    "resolutions": {
+      "items": {
+        "$ref": "#/$defs/Resolution"
+      },
+      "title": "Resolutions",
+      "type": "array"
+    },
+    "checks": {
+      "items": {
+        "$ref": "#/$defs/Check"
+      },
+      "title": "Checks",
+      "type": "array"
+    },
+    "final_answer": {
+      "minLength": 1,
+      "title": "Final Answer",
+      "type": "string"
+    },
+    "remaining_uncertainties": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Remaining Uncertainties",
+      "type": "array"
+    },
+    "business_acceptance": {
+      "const": "NOT_EVALUATED",
+      "title": "Business Acceptance",
+      "type": "string"
+    },
+    "external_actions_executed": {
+      "const": false,
+      "title": "External Actions Executed",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "task_id",
+    "source_pack_sha256",
+    "review_status",
+    "resolutions",
+    "checks",
+    "final_answer",
+    "remaining_uncertainties",
+    "business_acceptance",
+    "external_actions_executed"
+  ],
+  "title": "Decision",
+  "type": "object",
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

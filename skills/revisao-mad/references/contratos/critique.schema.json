@@ -1,0 +1,103 @@
+{
+  "$defs": {
+    "Finding": {
+      "additionalProperties": false,
+      "properties": {
+        "finding_id": {
+          "minLength": 1,
+          "title": "Finding Id",
+          "type": "string"
+        },
+        "claim_ids": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Claim Ids",
+          "type": "array"
+        },
+        "severity": {
+          "enum": [
+            "BLOCKER",
+            "MAJOR",
+            "MINOR",
+            "SUGGESTION"
+          ],
+          "title": "Severity",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "SUPPORTED",
+            "NEEDS_EVIDENCE"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "allegation": {
+          "minLength": 1,
+          "title": "Allegation",
+          "type": "string"
+        },
+        "evidence_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Evidence Ids",
+          "type": "array"
+        },
+        "discriminator": {
+          "description": "Teste ou contraexemplo proposto; nao significa executado",
+          "minLength": 1,
+          "title": "Discriminator",
+          "type": "string"
+        }
+      },
+      "required": [
+        "finding_id",
+        "claim_ids",
+        "severity",
+        "status",
+        "allegation",
+        "evidence_ids",
+        "discriminator"
+      ],
+      "title": "Finding",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "task_id": {
+      "title": "Task Id",
+      "type": "string"
+    },
+    "source_pack_sha256": {
+      "title": "Source Pack Sha256",
+      "type": "string"
+    },
+    "findings": {
+      "items": {
+        "$ref": "#/$defs/Finding"
+      },
+      "title": "Findings",
+      "type": "array"
+    },
+    "independent_checks_proposed": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Independent Checks Proposed",
+      "type": "array"
+    }
+  },
+  "required": [
+    "task_id",
+    "source_pack_sha256",
+    "findings",
+    "independent_checks_proposed"
+  ],
+  "title": "Critique",
+  "type": "object",
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

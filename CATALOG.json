@@ -26,9 +26,34 @@
       "entrypoint": "skills/auditar-metricas/SKILL.md",
       "purpose": "Reconciliacao de formulas, graos e fontes",
       "provenance": "PROJECT_AUTHORED_GENERIC_DISTRIBUTION"
+    },
+    {
+      "name": "revisao-mad",
+      "entrypoint": "skills/revisao-mad/SKILL.md",
+      "purpose": "Autor, critica, replica e arbitragem com evidencia",
+      "provenance": "PROJECT_AUTHORED_GENERIC_DISTRIBUTION"
+    },
+    {
+      "name": "versionamento-projetos",
+      "entrypoint": "skills/versionamento-projetos/SKILL.md",
+      "purpose": "Git local e publicacoes selecionadas auditadas",
+      "provenance": "PROJECT_AUTHORED_GENERIC_DISTRIBUTION"
     }
   ],
-  "agents": [],
+  "agents": [
+    {
+      "name": "mad_autor",
+      "config": "agents/mad-autor.toml"
+    },
+    {
+      "name": "mad_critico",
+      "config": "agents/mad-critico.toml"
+    },
+    {
+      "name": "mapa_tecnico",
+      "config": "agents/mapa-tecnico.toml"
+    }
+  ],
   "third_party_content_included": false,
   "quality": "Tooling tests do not establish general LLM or MAD superiority"
 }

@@ -16,9 +16,37 @@ não fazem parte dela.
 | [engenharia-ia-empresarial](skills/engenharia-ia-empresarial/SKILL.md) | LLM, RAG, agentes, limites e avaliacao |
 | [integracoes-apis](skills/integracoes-apis/SKILL.md) | APIs, contratos, idempotencia e falhas |
 | [auditar-metricas](skills/auditar-metricas/SKILL.md) | Reconciliacao de formulas, graos e fontes |
+| [revisao-mad](skills/revisao-mad/SKILL.md) | Autor, critica, replica e arbitragem com evidencia |
+| [versionamento-projetos](skills/versionamento-projetos/SKILL.md) | Git local e publicacoes selecionadas auditadas |
 
 Veja também o [catálogo legível por ferramentas](CATALOG.json) e as
 [instruções de instalação e limites](docs/installation.md).
+
+Os perfis [autor](agents/mad-autor.toml), [crítico](agents/mad-critico.toml) e
+[mapa técnico](agents/mapa-tecnico.toml) apoiam a delegação nativa. O principal
+integra a entrega; a crítica pode terminar sem achados. Não há benchmark que
+comprove superioridade geral do MAD nesta distribuição.
+
+## Verificar
+
+Requer Python 3.11 ou superior e Git. Os testes usam repositórios temporários e
+respostas simuladas; não criam repositórios no GitHub nem executam sistemas de
+negócio.
+
+```sh
+python scripts/validate_distribution.py
+python -m unittest discover -s tests -v
+python -m unittest discover -s skills/versionamento-projetos/tests -v
+```
+
+O manifesto fecha todos os arquivos versionados, exceto o próprio manifesto.
+Após editar e preparar os arquivos no índice, regenere-o e confira o diff:
+
+```sh
+python scripts/validate_distribution.py --write-manifest
+git add PUBLICATION_MANIFEST.json
+python scripts/validate_distribution.py
+```
 
 ## Proveniência e licença
 

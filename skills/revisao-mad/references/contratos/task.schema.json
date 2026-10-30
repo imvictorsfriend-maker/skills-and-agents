@@ -1,0 +1,193 @@
+{
+  "$defs": {
+    "Budget": {
+      "additionalProperties": false,
+      "properties": {
+        "max_critique_cycles": {
+          "maximum": 2,
+          "minimum": 1,
+          "title": "Max Critique Cycles",
+          "type": "integer"
+        },
+        "max_model_calls": {
+          "maximum": 6,
+          "minimum": 1,
+          "title": "Max Model Calls",
+          "type": "integer"
+        },
+        "proposed_max_wall_seconds": {
+          "minimum": 30,
+          "title": "Proposed Max Wall Seconds",
+          "type": "integer"
+        },
+        "proposed_max_total_tokens": {
+          "minimum": 1000,
+          "title": "Proposed Max Total Tokens",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "max_critique_cycles",
+        "max_model_calls",
+        "proposed_max_wall_seconds",
+        "proposed_max_total_tokens"
+      ],
+      "title": "Budget",
+      "type": "object"
+    },
+    "Evidence": {
+      "additionalProperties": false,
+      "properties": {
+        "source_id": {
+          "minLength": 1,
+          "title": "Source Id",
+          "type": "string"
+        },
+        "origin_id": {
+          "description": "Mesma origem para resumos derivados do mesmo documento ou gravacao",
+          "minLength": 1,
+          "title": "Origin Id",
+          "type": "string"
+        },
+        "source_kind": {
+          "enum": [
+            "USER_DECISION",
+            "DOMAIN_RULE",
+            "ARTIFACT",
+            "CHECK_RESULT",
+            "DERIVED_SUMMARY"
+          ],
+          "title": "Source Kind",
+          "type": "string"
+        },
+        "locator": {
+          "minLength": 1,
+          "title": "Locator",
+          "type": "string"
+        },
+        "observed_at": {
+          "minLength": 10,
+          "title": "Observed At",
+          "type": "string"
+        },
+        "excerpt": {
+          "minLength": 1,
+          "title": "Excerpt",
+          "type": "string"
+        },
+        "excerpt_sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Excerpt Sha256",
+          "type": "string"
+        }
+      },
+      "required": [
+        "source_id",
+        "origin_id",
+        "source_kind",
+        "locator",
+        "observed_at",
+        "excerpt",
+        "excerpt_sha256"
+      ],
+      "title": "Evidence",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "0.1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "task_id": {
+      "minLength": 1,
+      "title": "Task Id",
+      "type": "string"
+    },
+    "project_id": {
+      "minLength": 1,
+      "title": "Project Id",
+      "type": "string"
+    },
+    "mode": {
+      "enum": [
+        "PREPARATION_ONLY",
+        "READ_ONLY_PILOT"
+      ],
+      "title": "Mode",
+      "type": "string"
+    },
+    "question": {
+      "minLength": 1,
+      "title": "Question",
+      "type": "string"
+    },
+    "acceptance_criteria": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Acceptance Criteria",
+      "type": "array"
+    },
+    "current_constraints": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Current Constraints",
+      "type": "array"
+    },
+    "evidence": {
+      "items": {
+        "$ref": "#/$defs/Evidence"
+      },
+      "minItems": 1,
+      "title": "Evidence",
+      "type": "array"
+    },
+    "source_pack_sha256": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Source Pack Sha256",
+      "type": "string"
+    },
+    "permitted_actions": {
+      "items": {
+        "enum": [
+          "read_frozen_local_evidence",
+          "execute_allowlisted_local_check"
+        ],
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Permitted Actions",
+      "type": "array"
+    },
+    "requires_executable_verification": {
+      "title": "Requires Executable Verification",
+      "type": "boolean"
+    },
+    "budget": {
+      "$ref": "#/$defs/Budget"
+    }
+  },
+  "required": [
+    "schema_version",
+    "task_id",
+    "project_id",
+    "mode",
+    "question",
+    "acceptance_criteria",
+    "current_constraints",
+    "evidence",
+    "source_pack_sha256",
+    "permitted_actions",
+    "requires_executable_verification",
+    "budget"
+  ],
+  "title": "Task",
+  "type": "object",
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

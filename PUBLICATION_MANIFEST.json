@@ -6,6 +6,10 @@
       "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
     },
     {
+      "path": ".github/workflows/validate.yml",
+      "sha256": "b321bf0a013ca039d674d92399d437a903a900a8c6a78fe02a6275a29f180a1c"
+    },
+    {
       "path": ".gitignore",
       "sha256": "769344eb56ddd3888da2aec3ad895c213083b6212016270ce3f59ae8fc4d192b"
     },
@@ -15,11 +19,7 @@
     },
     {
       "path": "CATALOG.json",
-      "sha256": "f60abb62375ead2597b59f6b1d6bce50f8d236d5762e2c0ada22a555cb6768c8"
-    },
-    {
-      "path": "docs/installation.md",
-      "sha256": "f2de4f48e5d045a071e45c97a5e454b3a0941aa07d9d95bcc5ce1873d3e94a74"
+      "sha256": "9ea8f9e53ac55801e60bad53d8905cd612a2704d5ca4715f899973b7dd152457"
     },
     {
       "path": "LICENSE",
@@ -27,7 +27,31 @@
     },
     {
       "path": "README.md",
-      "sha256": "14856884d6ccf6887d609ce97046bb53d35c5a21ade4cf557073a0c3630e5ee1"
+      "sha256": "c2d36c4a0892394617c167ab7c2161955dcd4adac44a34409fd27f490338c5b0"
+    },
+    {
+      "path": "agents/mad-autor.toml",
+      "sha256": "52083eedd4ff690e9c6345bb7a64546bb2c93374126b0470de8a9f8877da2627"
+    },
+    {
+      "path": "agents/mad-critico.toml",
+      "sha256": "1b0a7579966dcf9a3f468c8f2d03cc3165e45d3f9482ce341c3f10684e6b18c0"
+    },
+    {
+      "path": "agents/mapa-tecnico.toml",
+      "sha256": "6464143acea8390d5471399d554927ea930754c83914d7f0f6f3b843726a6f5b"
+    },
+    {
+      "path": "docs/installation.md",
+      "sha256": "d74f943f3c8025d638f14f6573e18ebde351689ec2aebef2ef338408885a74db"
+    },
+    {
+      "path": "scripts/validate_distribution.py",
+      "sha256": "6a2ad3e3dfdbedd159d9195d903ebfef98617c9bf35e96ac5fed241ed857a9f4"
+    },
+    {
+      "path": "skills/auditar-metricas/SKILL.md",
+      "sha256": "ecb9a2c095ba086d7ff474574e7ec3229e2a3eff1b06701a599c582a2c1bdc21"
     },
     {
       "path": "skills/auditar-metricas/agents/openai.yaml",
@@ -38,8 +62,8 @@
       "sha256": "441cc265ec6bf1713dbd986727471666b136ff282a3e328d984df812942bbe2a"
     },
     {
-      "path": "skills/auditar-metricas/SKILL.md",
-      "sha256": "ecb9a2c095ba086d7ff474574e7ec3229e2a3eff1b06701a599c582a2c1bdc21"
+      "path": "skills/desenvolvimento-solucoes/SKILL.md",
+      "sha256": "8f40809855d13c840e5016411cd862bec2e87d9f15d2ed1e1593bafc95f9ae25"
     },
     {
       "path": "skills/desenvolvimento-solucoes/agents/openai.yaml",
@@ -50,8 +74,8 @@
       "sha256": "36d5b33fd62201f4b549e084a25fe884483dbd4af1ed936964c03dff0bd6f5a3"
     },
     {
-      "path": "skills/desenvolvimento-solucoes/SKILL.md",
-      "sha256": "8f40809855d13c840e5016411cd862bec2e87d9f15d2ed1e1593bafc95f9ae25"
+      "path": "skills/engenharia-ia-empresarial/SKILL.md",
+      "sha256": "e01bffd1202d45c64149301a4fc371dbc0beebf7611205a515df3f8a73ad0ae3"
     },
     {
       "path": "skills/engenharia-ia-empresarial/agents/openai.yaml",
@@ -70,8 +94,8 @@
       "sha256": "9a09a1410e9ffc9992f01e54fb9d6c12ae1bf2a178252961cf011a138c2f00f7"
     },
     {
-      "path": "skills/engenharia-ia-empresarial/SKILL.md",
-      "sha256": "e01bffd1202d45c64149301a4fc371dbc0beebf7611205a515df3f8a73ad0ae3"
+      "path": "skills/integracoes-apis/SKILL.md",
+      "sha256": "94d0f1811b8fad7694eeacad6e67c86a148687690c984dc61abc239b66d87efe"
     },
     {
       "path": "skills/integracoes-apis/agents/openai.yaml",
@@ -82,8 +106,64 @@
       "sha256": "84180bd1d041a2473706d6aa22d14a14e0f0a110bff67ee57a71af3088d0fd71"
     },
     {
-      "path": "skills/integracoes-apis/SKILL.md",
-      "sha256": "94d0f1811b8fad7694eeacad6e67c86a148687690c984dc61abc239b66d87efe"
+      "path": "skills/revisao-mad/SKILL.md",
+      "sha256": "210bd30b0a513610c4c856e828522d16560226ed8863d5c62881622891641223"
+    },
+    {
+      "path": "skills/revisao-mad/agents/openai.yaml",
+      "sha256": "ee18f7636e89f3992a1acad7bd72d9434b3cc925cafd36eaa8f73891b413b45b"
+    },
+    {
+      "path": "skills/revisao-mad/references/contratos/critique.schema.json",
+      "sha256": "9b3bd6705d412c264e03189034905cfb21b05ffa14f059f171f0e9ccbea0c1e5"
+    },
+    {
+      "path": "skills/revisao-mad/references/contratos/decision.schema.json",
+      "sha256": "6ff84fd66e7008ab0f2a3b51bb5031467d75889d79de91d403b7f14f5ae3a9ba"
+    },
+    {
+      "path": "skills/revisao-mad/references/contratos/draft.schema.json",
+      "sha256": "22b72bbd68686cbd04e5cb7f6276992040242ad22cc2dfb8c29a625fcff247f4"
+    },
+    {
+      "path": "skills/revisao-mad/references/contratos/reply.schema.json",
+      "sha256": "0ba3ef583bf9ba9c6591fe3c463312c23b6f73f6f6c63147a61a5cf5d8601a7a"
+    },
+    {
+      "path": "skills/revisao-mad/references/contratos/task.schema.json",
+      "sha256": "4023cbc7bb792dcdc3fdc7713125a006c129e37f0297c29cfa4a06804bafe32b"
+    },
+    {
+      "path": "skills/revisao-mad/references/estado.json",
+      "sha256": "55b109ea0eaae1e2b70317432d8371029e73062a08ff6116136a666e565c2fb8"
+    },
+    {
+      "path": "skills/versionamento-projetos/SKILL.md",
+      "sha256": "5a78f8216674ce6551fdb74e92ef63932554e10996ae143964addd55035876bc"
+    },
+    {
+      "path": "skills/versionamento-projetos/agents/openai.yaml",
+      "sha256": "ea3f4b5cba2cc91f0602b32783702f1b84f1fca0daa33c9e524e7db243e19265"
+    },
+    {
+      "path": "skills/versionamento-projetos/scripts/ambiente.py",
+      "sha256": "5e1918d5de32906d7cf892bbaf48a92edfe91a5a8707d324743b077034190b99"
+    },
+    {
+      "path": "skills/versionamento-projetos/scripts/guard.py",
+      "sha256": "2f73761b2b3ea86d3ceeafba4befc1e9bd47b4c7a5d9133211e79eff4b44235c"
+    },
+    {
+      "path": "skills/versionamento-projetos/tests/test_ambiente.py",
+      "sha256": "6dc6fbf699dbe797672071cb4dbdbf294b4ae3814d73d151de676ac0288b1390"
+    },
+    {
+      "path": "skills/versionamento-projetos/tests/test_guard.py",
+      "sha256": "aff51308ab68b56a54fb8227a7097c36436af063330901cdf7f208ddf56aca5a"
+    },
+    {
+      "path": "tests/test_distribution.py",
+      "sha256": "d302764738120a4914cf41452997174e132c9e6b703e40f94e9e859dfec8fefd"
     }
   ]
 }

@@ -1,0 +1,123 @@
+{
+  "$defs": {
+    "Claim": {
+      "additionalProperties": false,
+      "properties": {
+        "claim_id": {
+          "minLength": 1,
+          "title": "Claim Id",
+          "type": "string"
+        },
+        "text": {
+          "minLength": 1,
+          "title": "Text",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "FACT",
+            "INFERENCE",
+            "HYPOTHESIS"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "evidence_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Evidence Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "claim_id",
+        "text",
+        "kind",
+        "evidence_ids"
+      ],
+      "title": "Claim",
+      "type": "object"
+    },
+    "ReplyItem": {
+      "additionalProperties": false,
+      "properties": {
+        "finding_id": {
+          "title": "Finding Id",
+          "type": "string"
+        },
+        "disposition": {
+          "enum": [
+            "ACCEPT",
+            "REJECT",
+            "NEEDS_EVIDENCE"
+          ],
+          "title": "Disposition",
+          "type": "string"
+        },
+        "public_justification": {
+          "description": "Justificativa verificavel e concisa; nao raciocinio privado",
+          "minLength": 1,
+          "title": "Public Justification",
+          "type": "string"
+        },
+        "evidence_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Evidence Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "finding_id",
+        "disposition",
+        "public_justification",
+        "evidence_ids"
+      ],
+      "title": "ReplyItem",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "task_id": {
+      "title": "Task Id",
+      "type": "string"
+    },
+    "source_pack_sha256": {
+      "title": "Source Pack Sha256",
+      "type": "string"
+    },
+    "responses": {
+      "items": {
+        "$ref": "#/$defs/ReplyItem"
+      },
+      "title": "Responses",
+      "type": "array"
+    },
+    "revised_claims": {
+      "items": {
+        "$ref": "#/$defs/Claim"
+      },
+      "minItems": 1,
+      "title": "Revised Claims",
+      "type": "array"
+    },
+    "revised_answer": {
+      "minLength": 1,
+      "title": "Revised Answer",
+      "type": "string"
+    }
+  },
+  "required": [
+    "task_id",
+    "source_pack_sha256",
+    "responses",
+    "revised_claims",
+    "revised_answer"
+  ],
+  "title": "Reply",
+  "type": "object",
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}
