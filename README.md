@@ -1,5 +1,7 @@
 # Skills and agents
 
+[![Validate distribution](https://github.com/imvictorsfriend-maker/skills-and-agents/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/imvictorsfriend-maker/skills-and-agents/actions/workflows/validate.yml)
+
 Reusable skills and agent profiles for solution architecture, AI engineering,
 integrations, metric audits and evidence-based technical review.
 
@@ -20,7 +22,10 @@ não fazem parte dela.
 | [versionamento-projetos](skills/versionamento-projetos/SKILL.md) | Git local e publicacoes selecionadas auditadas |
 
 Veja também o [catálogo legível por ferramentas](CATALOG.json) e as
-[instruções de instalação e limites](docs/installation.md).
+[instruções de instalação e limites](docs/installation.md). A
+[integração com GitHub](docs/github-integration.md) descreve as consultas à API,
+as publicações selecionadas e o que permanece local. Para bugs e perguntas,
+consulte [SUPPORT.md](SUPPORT.md).
 
 Os perfis [autor](agents/mad-autor.toml), [crítico](agents/mad-critico.toml) e
 [mapa técnico](agents/mapa-tecnico.toml) apoiam a delegação nativa. O principal
@@ -32,6 +37,9 @@ comprove superioridade geral do MAD nesta distribuição.
 Requer Python 3.11 ou superior e Git. Os testes usam repositórios temporários e
 respostas simuladas; não criam repositórios no GitHub nem executam sistemas de
 negócio.
+
+O indicador no topo acompanha o workflow de validação da branch `main`. Ele
+mostra o estado de CI; não representa uma conquista pessoal ou certificação.
 
 ```sh
 python scripts/validate_distribution.py
