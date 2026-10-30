@@ -107,7 +107,7 @@
     },
     {
       "path": "skills/revisao-mad/SKILL.md",
-      "sha256": "57ffd6a516164d5ddbb3c6f2dc46f91c3c7e867647228e0cec896ed878acb2ca"
+      "sha256": "210bd30b0a513610c4c856e828522d16560226ed8863d5c62881622891641223"
     },
     {
       "path": "skills/revisao-mad/agents/openai.yaml",
@@ -147,11 +147,11 @@
     },
     {
       "path": "skills/versionamento-projetos/scripts/ambiente.py",
-      "sha256": "55811259beade0ef7060e0eb38661255e72e7e5a3aebbf28284405f047c7d3c7"
+      "sha256": "5e1918d5de32906d7cf892bbaf48a92edfe91a5a8707d324743b077034190b99"
     },
     {
       "path": "skills/versionamento-projetos/scripts/guard.py",
-      "sha256": "2dea454f63e880fc9be09de1c9b28f1c4860a0c9ad487907a27fb999d2298abf"
+      "sha256": "2f73761b2b3ea86d3ceeafba4befc1e9bd47b4c7a5d9133211e79eff4b44235c"
     },
     {
       "path": "skills/versionamento-projetos/tests/test_ambiente.py",

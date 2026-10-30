@@ -349,4 +349,3 @@ def main():
  print(json.dumps({'projects':len(results),'results':results if args.command!='scan' else [{'id':x['id'],'candidates':len(x['approved_candidates']),'deferred':len(x['deferred'])} for x in results]},ensure_ascii=True))
  return 1 if any(x.get('status')=='BLOCKED' for x in results) else 0
 if __name__=='__main__':raise SystemExit(main())
-

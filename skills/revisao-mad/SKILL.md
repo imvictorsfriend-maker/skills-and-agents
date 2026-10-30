@@ -31,4 +31,3 @@ Papéis disponíveis: mad_autor e mad_critico; mapa_tecnico é opcional para loc
 A configuração não autoriza carga, deploy, envio, exclusão ou agendamento de negócio. Validar fronteira técnica no executor; prompt não cria sandbox. Código local, teste local, Spark remoto, operação recorrente e aceite de negócio continuam sendo estados distintos.
 
 A preparação histórica e os contratos de referência estão em [estado e fontes](references/estado.json). Não confundir testes de estrutura com avaliação de qualidade do modelo.
-
