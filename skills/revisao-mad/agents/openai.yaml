@@ -1,0 +1,5 @@
+interface:
+  display_name: "revisao-mad"
+  short_description: "Revisao com critica, replica e evidencia"
+policy:
+  allow_implicit_invocation: true

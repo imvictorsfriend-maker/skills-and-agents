@@ -1,0 +1,84 @@
+{
+  "$defs": {
+    "Claim": {
+      "additionalProperties": false,
+      "properties": {
+        "claim_id": {
+          "minLength": 1,
+          "title": "Claim Id",
+          "type": "string"
+        },
+        "text": {
+          "minLength": 1,
+          "title": "Text",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "FACT",
+            "INFERENCE",
+            "HYPOTHESIS"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "evidence_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Evidence Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "claim_id",
+        "text",
+        "kind",
+        "evidence_ids"
+      ],
+      "title": "Claim",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "task_id": {
+      "title": "Task Id",
+      "type": "string"
+    },
+    "source_pack_sha256": {
+      "title": "Source Pack Sha256",
+      "type": "string"
+    },
+    "claims": {
+      "items": {
+        "$ref": "#/$defs/Claim"
+      },
+      "minItems": 1,
+      "title": "Claims",
+      "type": "array"
+    },
+    "proposed_answer": {
+      "minLength": 1,
+      "title": "Proposed Answer",
+      "type": "string"
+    },
+    "open_questions": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Open Questions",
+      "type": "array"
+    }
+  },
+  "required": [
+    "task_id",
+    "source_pack_sha256",
+    "claims",
+    "proposed_answer",
+    "open_questions"
+  ],
+  "title": "Draft",
+  "type": "object",
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

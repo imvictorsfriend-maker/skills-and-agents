@@ -1,0 +1,5 @@
+interface:
+  display_name: "versionamento-projetos"
+  short_description: "Git e vinculos dos projetos existentes"
+policy:
+  allow_implicit_invocation: true

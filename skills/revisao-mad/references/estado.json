@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "state": "GENERIC_DISTRIBUTION",
+  "quality_evaluation": "NOT_BENCHMARKED_WITH_LLM",
+  "roles": [
+    "mad_autor",
+    "mad_critico",
+    "root_integrator"
+  ],
+  "contracts": "references/contratos",
+  "note": "Local tests validate tooling and contracts, not general MAD superiority"
+}
