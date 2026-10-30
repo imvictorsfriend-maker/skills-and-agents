@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "license": "MIT",
+  "distribution": "GENERIC_SOURCE_ONLY",
+  "skills": [
+    {
+      "name": "desenvolvimento-solucoes",
+      "entrypoint": "skills/desenvolvimento-solucoes/SKILL.md",
+      "purpose": "Arquitetura, implementacao e entrega proporcional",
+      "provenance": "PROJECT_AUTHORED_GENERIC_DISTRIBUTION"
+    },
+    {
+      "name": "engenharia-ia-empresarial",
+      "entrypoint": "skills/engenharia-ia-empresarial/SKILL.md",
+      "purpose": "LLM, RAG, agentes, limites e avaliacao",
+      "provenance": "PROJECT_AUTHORED_GENERIC_DISTRIBUTION"
+    },
+    {
+      "name": "integracoes-apis",
+      "entrypoint": "skills/integracoes-apis/SKILL.md",
+      "purpose": "APIs, contratos, idempotencia e falhas",
+      "provenance": "PROJECT_AUTHORED_GENERIC_DISTRIBUTION"
+    },
+    {
+      "name": "auditar-metricas",
+      "entrypoint": "skills/auditar-metricas/SKILL.md",
+      "purpose": "Reconciliacao de formulas, graos e fontes",
+      "provenance": "PROJECT_AUTHORED_GENERIC_DISTRIBUTION"
+    }
+  ],
+  "agents": [],
+  "third_party_content_included": false,
+  "quality": "Tooling tests do not establish general LLM or MAD superiority"
+}

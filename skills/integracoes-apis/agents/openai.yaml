@@ -1,0 +1,3 @@
+interface:
+  display_name: "Integrações de APIs"
+  short_description: "Contratos, autenticação e falhas entre sistemas"

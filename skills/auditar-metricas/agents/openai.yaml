@@ -1,0 +1,6 @@
+interface:
+  display_name: "Auditoria de métricas"
+  short_description: "Conciliação de regras, números, fontes e filtros"
+  default_prompt: "Use $auditar-metricas para conduzir este trabalho com contexto, fontes e validação."
+policy:
+  allow_implicit_invocation: true

@@ -14,12 +14,76 @@
       "sha256": "c26b80ece4384689fbbb3cf57ad275ba3e7c5db6273ac01e2779af8f9d7beb76"
     },
     {
+      "path": "CATALOG.json",
+      "sha256": "f60abb62375ead2597b59f6b1d6bce50f8d236d5762e2c0ada22a555cb6768c8"
+    },
+    {
+      "path": "docs/installation.md",
+      "sha256": "f2de4f48e5d045a071e45c97a5e454b3a0941aa07d9d95bcc5ce1873d3e94a74"
+    },
+    {
       "path": "LICENSE",
       "sha256": "a47f66e9dc838967c2790053426a79cb0953f6bfeeb9bfa0ae8e3d46e5b8d66d"
     },
     {
       "path": "README.md",
-      "sha256": "7fb8b0ef4299747383f1bbfead92b0f2a3db39fdce08a285bee0bb3ede83f220"
+      "sha256": "14856884d6ccf6887d609ce97046bb53d35c5a21ade4cf557073a0c3630e5ee1"
+    },
+    {
+      "path": "skills/auditar-metricas/agents/openai.yaml",
+      "sha256": "2908a962a878a3e46e297fdbe575a4b24f98daa81539275dfe9a7e54850981d6"
+    },
+    {
+      "path": "skills/auditar-metricas/references/apoio-engenharia-ia.md",
+      "sha256": "441cc265ec6bf1713dbd986727471666b136ff282a3e328d984df812942bbe2a"
+    },
+    {
+      "path": "skills/auditar-metricas/SKILL.md",
+      "sha256": "ecb9a2c095ba086d7ff474574e7ec3229e2a3eff1b06701a599c582a2c1bdc21"
+    },
+    {
+      "path": "skills/desenvolvimento-solucoes/agents/openai.yaml",
+      "sha256": "8ba4c3d96a7cb6335f5cb0321a2e9444befee7abbc3e4f88543179309b790bb7"
+    },
+    {
+      "path": "skills/desenvolvimento-solucoes/references/arquitetura-entrega.md",
+      "sha256": "36d5b33fd62201f4b549e084a25fe884483dbd4af1ed936964c03dff0bd6f5a3"
+    },
+    {
+      "path": "skills/desenvolvimento-solucoes/SKILL.md",
+      "sha256": "8f40809855d13c840e5016411cd862bec2e87d9f15d2ed1e1593bafc95f9ae25"
+    },
+    {
+      "path": "skills/engenharia-ia-empresarial/agents/openai.yaml",
+      "sha256": "f91097f4a3babf9a53571d0f95ef3d8e6c1a8522dcf9d3b5210a4a5e259b2b09"
+    },
+    {
+      "path": "skills/engenharia-ia-empresarial/references/desempenho.md",
+      "sha256": "f0de7bdf67659c704290af347b37aeefffa9d12aacc56aaadc26e810ee340d99"
+    },
+    {
+      "path": "skills/engenharia-ia-empresarial/references/qualidade-avaliacao.md",
+      "sha256": "d77176ce4152311292ff0b4d7b1349db19263c11f90fdfd3629e215e64d164f6"
+    },
+    {
+      "path": "skills/engenharia-ia-empresarial/references/seguranca-operacao.md",
+      "sha256": "9a09a1410e9ffc9992f01e54fb9d6c12ae1bf2a178252961cf011a138c2f00f7"
+    },
+    {
+      "path": "skills/engenharia-ia-empresarial/SKILL.md",
+      "sha256": "e01bffd1202d45c64149301a4fc371dbc0beebf7611205a515df3f8a73ad0ae3"
+    },
+    {
+      "path": "skills/integracoes-apis/agents/openai.yaml",
+      "sha256": "49a8d2f4d876828bb49d0378caa5ec4234969020002d0468e687c3569d2b27b3"
+    },
+    {
+      "path": "skills/integracoes-apis/references/contratos-falhas.md",
+      "sha256": "84180bd1d041a2473706d6aa22d14a14e0f0a110bff67ee57a71af3088d0fd71"
+    },
+    {
+      "path": "skills/integracoes-apis/SKILL.md",
+      "sha256": "94d0f1811b8fad7694eeacad6e67c86a148687690c984dc61abc239b66d87efe"
     }
   ]
 }
